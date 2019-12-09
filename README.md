@@ -1,6 +1,6 @@
-### Stock Market
+## Stock Market
 
-## Twitter Based Sentiment Analysis
+### Twitter Based Sentiment Analysis
 What it does
 
     1. Pulls twitter and stock information
