@@ -1,6 +1,6 @@
-###Stock Market
+### Stock Market
 
-##Twitter Based Sentiment Analysis
+## Twitter Based Sentiment Analysis
 What it does
 
     1. Pulls twitter and stock information
@@ -34,7 +34,7 @@ Built With
 
 
 
-# Stock-read
+## Stock-read
 Aim of this is to give a detailed output of the inputted Stock name .This will include the graph of the stock , implemented by using matplotlib .
 
 Currently under development .
