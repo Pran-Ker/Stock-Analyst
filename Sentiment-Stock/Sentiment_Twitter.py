@@ -5,11 +5,11 @@ from textblob import TextBlob
 import csv
 
 #Basic Authentication for the Tweepy API to work
-consumer_key = 'MxCFeJbnN3yoSi1QZR2ubJWNQ'
-consumer_secret = 'CiZaHrUDTO0Y8orlL1ipa4WKmjvDhindQVpVjtBVNRWdC4UuFG'
+consumer_key = 'MxeJbnN3yoSi1QZR2ubJWNQ'
+consumer_secret = 'CiHrUDTO0Y8orlL1ipa4WKmjvDhindQVpVjtBVNRWdC4UuFG'
 
-access_token = '1133664097227067392-R1BqTRKYI5dV7AxNDNxFihxwTdQ2U4'
-access_token_secret = 'aOukDBiDtAHZzhY5B75LVtAINxXsGAWA4dPJ2LTYuzJzr'
+access_token = '11336097227067392-R1BqTRKYI5dV7AxNDNxFihxwTdQ2U4'
+access_token_secret = 'aOukiDtAHZzhY5B75LVtAINxXsGAWA4dPJ2LTYuzJzr'
 
 
 def get_tweets(username):
