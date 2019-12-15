@@ -26,14 +26,11 @@ Built With
 * tweepy
 
 
-
-
-
-
-
-
-
 ## Stock-read
-Aim of this is to give a detailed output of the inputted Stock name .This will include the graph of the stock , implemented by using matplotlib .
+This application is used for graphing the data of the stocks and displaying it .
 
-Currently under development .
+### How it works
+Using panda.datareader the program downloads the desired stocks from the website choosen in this case it was "yahoo" and choose the stock of choice.
+Using matplotlib we graph the entire stock chart with various options . 
+
+*It must be noted that the there is another README in the this part of the application.
