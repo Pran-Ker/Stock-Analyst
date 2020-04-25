@@ -5,7 +5,7 @@ import numpy as np
 import csv
 
 
-twitter_raw_filename = '/home/pran_ker/Projects/StockAnalyst/Sentiment-Stock/Nike_tweets.csv'
+twitter_raw_filename = '/Nike_tweets.csv'
 # reading the twitter scrapped data file
 tweets = pd.read_csv(twitter_raw_filename)
 # setting the column of tweets dataframe
