@@ -1,0 +1,30 @@
+ 
+//@version=4
+strategy("Moving Average Crossover Bot", overlay=true)
+
+// Set up the moving averages
+fastMA = input(title="Fast MA Period", type=input.integer, defval=20)
+slowMA = input(title="Slow MA Period", type=input.integer, defval=50)
+
+fastMAVal = sma(close, fastMA)
+slowMAVal = sma(close, slowMA)
+
+// Generate the buy and sell signals
+buySignal = crossover(fastMAVal, slowMAVal)
+sellSignal = crossunder(fastMAVal, slowMAVal)
+
+// Set the stop loss and take profit levels
+stopLossPct = input(title="Stop Loss %", type=input.float, defval=1.0)
+takeProfitPct = input(title="Take Profit %", type=input.float, defval=2.0)
+
+stopLoss = strategy.position_avg_price * (1 - stopLossPct / 100)
+takeProfit = strategy.position_avg_price * (1 + takeProfitPct / 100)
+
+// Execute the trades
+if (buySignal)
+    strategy.entry("Buy", strategy.long)
+    strategy.exit("Sell", "Buy", stop=stopLoss, limit=takeProfit)
+
+if (sellSignal)
+    strategy.entry("Sell", strategy.short)
+    strategy.exit("Buy", "Sell", stop=stopLoss, limit=takeProfit)
